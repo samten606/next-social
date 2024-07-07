@@ -1,8 +1,11 @@
-import React from 'react'
+import LeftMenuList from "./LeftMenuList"
+
 
 const LeftMenu = () => {
   return (
-    <div>LeftMenu</div>
+    <div className='flex  flex-col items-center justify-center gap-6'>
+      <LeftMenuList/>
+    </div>
   )
 }
 

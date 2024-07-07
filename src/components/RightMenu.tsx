@@ -1,8 +1,25 @@
 import React from 'react'
+import FriendRequest from './FriendRequest'
+import Birthdays from './Birthdays'
+import SponsoredAds from './SponsoredAds'
+import UserInformation from './UserInformation'
+import UserMedia from './UserMedia'
 
-const RightMenu = () => {
+const RightMenu = ({userId}) => {
   return (
-    <div>RightMenu</div>
+    <div className='flex  flex-col items-center  gap-6'>
+      {userId?(<>
+      <UserInformation/>
+       <UserMedia/>
+      </>):(null)}
+      <><FriendRequest/>
+      <Birthdays/>
+      <SponsoredAds/>
+      </>
+      
+  
+      
+    </div>
   )
 }
 

@@ -4,7 +4,8 @@ import RightMenu from "@/components/RightMenu"
 import AddPost from "@/components/AddPost"
 import Feed from "@/components/Feed"
 
-const Homepage = () => {
+
+const Homepage = ({userId}:{userId?:String | null}) => {
   return (
     <div className='flex gap-6 pt-4'>
       
@@ -19,7 +20,7 @@ const Homepage = () => {
         </div>
       </div>
       <div className="hidden lg:block w-[30%]">
-        <RightMenu/>
+        <RightMenu userId='samssss'/>
       </div>
     </div>
   )
